@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete website design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo">
+            <div class="header-text">
+                <h1>The purpose is to<br> teach , bring learning to people</h1>
+                <span class="square"></span>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, quod?Lorem ipsum dolor
+                     sit amet consectetur adipisicing elit. Numquam eaque exercitationem provident id possimus,
+                      sequi ipsum distinctio, impedit saepe vitae alias? Pariatur voluptates eveniet voluptatum maiores
+                       quaerat vel voluptate non repudiandae laborum aliquam nulla voluptas necessitatibus consequatur ut,
+                        animi hic iusto impedit exercitationem! Aspernatur pariatur dolores numquam excepturi qui assumenda.
+                </p>
+                <button class="common-btn">Read More</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Offer</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+
+
+    <script>
+        var menuBtn=document.getElementById("menuBtn");
+        var sideNav=document.getElementById("sideNav");
+
+        sideNav.style.right="-250px"
+        menuBtn.onclick = function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0px"
+            }else{
+                sideNav.style.right="-250px"
+            }
+        }
+    </script>
+</body>
+</html>
